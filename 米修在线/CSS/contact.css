@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* ============================= */
+#contactform .form-group{
+    margin-bottom: 20px;
+}
+
+#contactform h1,p{
+    padding-bottom:20px ;
+}
+
+#contactform p{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#contactform label{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#contactform input,
+#contactform textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#contactform input:focus,
+#contactform textarea:focus{
+    outline: none;
+    border-color: #f7c08a;
+}
+
+#contactform textarea{
+    height: 200px;
+}
+/* ============================= */
+#featu {
+   padding: 20px 0;
+   overflow: hidden;
+}
+
+#featu ul li{
+    float: left;
+    width: 33.3%;
+    list-style: none;
+    text-align: center;
+    padding-top: 25px;
+    font-size: 20px;
+    font-weight: 700;
+}
+#featu ul li i,
+#featu ul li h3{
+    padding-bottom: 20px;
+}
