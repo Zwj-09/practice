@@ -1,0 +1,200 @@
+/* 修改container最大宽度 */
+@media screen and (min-width:1280px){
+    .container{
+        width: 1280px!important;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: #ffffff;
+}
+
+/* logo设置 */
+header{
+    /* 取消header的左右边距 */
+    padding-left: 0!important;
+}
+
+.logo{
+    background-color: #429ad9;
+}
+.logo img{
+    /* 设置logo图片在最小屏幕下的样式 */
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* 超小屏幕下 logo里的图片隐藏 */
+.logo span{
+    display: block;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    font-size: 18px;
+}
+
+/* 清除li的圆点 */
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* nav部分 */
+.nav{
+    background: #eee;
+    border: 1px solid #ccc;
+}
+
+
+/* 小屏幕时*/
+@media screen and (max-width:991px)
+{
+    /* 导航栏 li 浮动 每个20%  */
+    .nav li {
+        float: left;
+        width: 20%;
+    }
+    /* 设置article的上边距 */
+    article{
+        margin-top: 10px;
+    }
+}
+
+/* 超小屏幕时 */
+@media screen and (max-width:767px){
+    /* 修改字体 */
+    .nav li a {
+        font-size: 14px;
+        padding-left: 0;
+    }
+    /* 设置li的宽度 */
+    .news ul li{
+        width: 50%;
+    }
+    /* 设置第一个li的宽度 */
+    .news ul li:nth-child(1){
+        width: 100%;
+    }
+    /* 设置news publish的h大小 */
+    .publish h3{
+        font-size: 14px;
+    }
+}
+
+.nav a{
+    display: block;
+    height: 50px;
+    color:#666;
+    text-decoration: none;
+    line-height: 50px;
+    padding-left: 30px;
+    font-size: 16px;
+}
+
+.nav a:hover{
+    text-decoration: none;
+    color:#333;
+    background-color: #ffffff;
+}
+
+.nav a::before{
+    /* 需要设置字体和图片对齐方式 默认基线对齐 */
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+/* article部分 */
+.news ul>li{
+    float: left;
+    width: 25%;
+    height: 128px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+
+.news ul>li:nth-child(1){
+    width: 50%;
+    height: 266px;
+}
+
+.carousel,.carousel img{
+    height: 266px!important;
+    width: 100%;
+}
+
+.news li:nth-child(1) p{
+    line-height: 41px;
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+.news li>a{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.news li a img{
+    width: 100%;
+    height: 100%;
+}
+
+.news li a p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 41px;
+    background: rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+    color: #fff;
+    margin-bottom: 0;
+    padding: 5px 10px;
+}
+
+/* publish部分 */
+.publish{
+    border-top: 1px solid #ccc;
+}
+.pic{
+    margin-top: 10px;
+}
+.publish .row{
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+.pic img{
+    width: 100%;
+}
+
+.banner img{
+    width: 100%;
+}
+
+aside a{
+    text-decoration: none!important;
+}
+.hot{
+    display: block;
+    margin-top: 20px;
+    padding: 0 20px 20px;
+    border: 1px solid #ccc;
+}
+.hot span{
+    margin-bottom: 20px;
+}
+
+/* 设置省略号展示无法显示完全的部分 */
+.hot p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

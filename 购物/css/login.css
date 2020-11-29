@@ -1,0 +1,162 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: "icomoon";
+    src: url("../fonts/icomoon.eot") format('embedded-opentype'),
+        url("../fonts/icomoon.svg") format('svg'),
+        url("../fonts/icomoon.ttf") format('truetype'),
+        url("../fonts/icomoon.woff") format('woff');
+    font-weight: normal;
+    font-size: normal;
+  }
+  
+  
+    /* 使用字体图标 */
+  .icoon{
+        font-family: 'icomoon';
+        font-size: 16px;
+        line-height: 26px; 
+  }
+.login{
+    width: 100%;
+    height: 688px;
+    box-sizing: border-box;
+}
+
+.login-head{
+    height: 82px;
+}
+.login-head .logo{
+    display: block;
+    text-indent: -999px;
+    overflow: hidden;
+    background: url(../upload/logo.png) no-repeat;
+}
+.login-main{
+    position: relative;
+    height: 488px;
+    background: url(../upload/登录.png) no-repeat center top;
+}
+
+.login-btn{
+    position: absolute;
+    top: 70px;
+    right: 150px;
+    width: 385px;
+    height: 363px;
+    background-color: #ffffff;
+}
+.login-btn span{
+    font-size: 18px;
+}
+/* 60 65  40 10  */
+.login-btn .scan{
+    padding: 24px 65px 20px 46px;
+    color:#666666;
+}
+.login-btn .dl{
+    padding: 24px 46px 20px 65px;
+    color:#c81623;
+}
+.login-btn-bd{
+    position: absolute;
+    top: 0;
+    left: 40px;
+    width: 308px;
+    height: 220px;
+    /* background-color: pink; */
+}
+
+.login-btn-bd{
+    position: relative;
+}
+.login-btn-bd .tb1{
+    position: absolute;
+    top: 100px;
+    left: 5px;
+    width: 37px;
+    height: 34px;
+    border:1px solid #cfcdcd;
+    border-right: 0;
+    background-color: #cfcdcd;
+    line-height: 34px;
+    text-align: center;
+    /* background: url(../upload/用户.png) no-repeat; */
+}
+.login-btn-bd .user{
+    position: absolute;
+    top: 100px;
+    left: 44px;
+    width: 264px;
+    height: 34px;
+    border:1px solid #cfcdcd;
+    border-left: 0;
+    padding-left: 5px;
+}
+
+.login-btn-bd .tb2{
+    position: absolute;
+    top: 160px;
+    left: 5px;
+    width: 37px;
+    height: 34px;
+    border:1px solid #cfcdcd;
+    border-right: 0;
+    background-color: #cfcdcd;
+    line-height: 34px;
+    text-align: center;
+    /* background: url(../upload/用户.png) no-repeat; */
+}
+.login-btn-bd .pass{
+    position: absolute;
+    top: 160px;
+    left: 44px;
+    width: 264px;
+    height: 34px;
+    border:1px solid #cfcdcd;
+    border-left: 0;
+    padding-left: 5px;
+}
+
+.zf{
+    padding-left: 45px;
+    height: 20px;
+    line-height: 12px;
+}
+.fg{
+    padding-right: 40px;   
+    color:black;
+    font-weight: 700;
+}
+
+.finish{
+    padding-left: 45px;
+    margin-top:15px;
+}
+.end{
+    display: block;
+    width: 302px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    background-color: #c81623;
+    font-size: 18px;
+    font-weight: 700;
+    color:#fff;
+
+}
+
+.last{
+    padding-left: 45px;
+    margin-top:15px;
+}
+.last li{
+    float: left;
+}
+.last li:nth-child(n+1){
+    padding-left: 15px;
+}
+
+/* 302 38 */

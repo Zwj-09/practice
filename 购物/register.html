@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册界面</title>
+    <!-- 引入初始化css -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 引入注册css -->
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <div class="w">
+        <!-- 头部 -->
+        <div class="header">
+            <!-- logo部分 -->
+            <div class="logo">
+                <a href="index.html" title="品优购">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- 注册部分 -->
+        <div class="registerarea w">
+            <h3>
+                注册新用户
+                <em>我有账号,去<a href="#">登陆</a></em>
+            </h3>
+
+
+            <div class="registerform">
+                <form action="http://www.baidu.com/">
+                    <!-- 表单需要表单域 才能提交 -->
+                    <ul>
+                        <li>
+                            <!-- 行内快 -->
+                            <!-- 设置宽度 全部右对齐 -->
+                            <label for="tel">手机号:</label>
+                            <input type="text" value="" class="inp" id="tel" class="inp">
+                            <span class="error">
+                                <i class="error_ico"> </i>
+                                手机格式输入错误，请重新输入</span>
+                        </li>
+                        <li>
+                            <!-- 行内快 -->
+                            <!-- 设置宽度 全部右对齐 -->
+                            <label for="message">短信验证码:</label>
+                            <input type="text" value="" id="message" class="inp">
+
+                        </li>
+                        <li>
+                            <!-- 行内快 -->
+                            <!-- 设置宽度 全部右对齐 -->
+                            <label for="pwd">登陆密码:</label>
+                            <input type="text" value="" id="pwd" class="inp">
+                            <span class="error">
+                                <i class="error_ico"> </i>
+                                <i class="right_ico"></i>
+                                密码不少于六位数,请重新输入</span>
+                        </li>
+                        <li class="safe">
+                            安全程度:
+                            <em class="ruo">弱</em>
+                            <em class="zhong">中</em>
+                            <em class="qiang">强</em>
+                        </li>
+                        <li>
+                            <!-- 行内快 -->
+                            <!-- 设置宽度 全部右对齐 -->
+                            <label for="sure">确认密码:</label>
+                            <input type="text" value="" id="sure" class="inp">
+                            <span class="error">
+                                <i class="error_ico"> </i>
+                                密码不一致,请重新输入</span>
+                        </li>
+                        <li class="agree">
+                            <input type="checkbox" checked="checked">
+                            同意协议并注册
+                            <a href="#">《用户协议》</a>
+                        </li>
+                        <li>
+                            <input type="submit" value="完成注册" class="finish">
+                        </li>
+                    </ul>
+                </form>
+            </div>
+
+        </div>
+        <!-- 尾部 -->
+        <div class="footer">
+            <p class="links">
+                关于我们 | 联系我们 | 联系客服 | 商家入驻 | 营销中心 | 手机品优购 | 友情链接 | 销售联盟 | 品优购社区 | 品优购公益 | English Site | Contact U
+            </p>
+            <p class="copyright">
+                地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100 邮箱: zhanghj+itcast.cn<br>
+                京ICP备08001421号京公网安备11010800770
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

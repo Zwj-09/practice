@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手机详情页</title>
+    <meta name="description" content="京东JD.COM-专业的综合网上购物商城,销售家电、数码通讯、电脑、家居百货、
+    服装服饰、母婴、图书、食品等数万个品牌优质商品.便捷、诚信的服务,为您提供愉悦的网上购物体验">
+    <meta name="keyword" content="网上购物、网上商城、手机、笔记本、电脑、mp3、手表、配件、数码">
+    <!-- 引入css基础样式 -->
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 添加css 共同样式 -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- 引入facicon.cio网页图标 -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- 引入详情页样式 -->
+    <link rel="stylesheet" href="css/detail.css">
+    <!-- 引入js -->
+    <script src="JS/detail.js"></script>
+    <!-- 引入JQuery -->
+    <script src="JS/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- 顶部快捷导航栏 -->
+    <div class="shortcut">
+        <div class="w">
+            <div class="fl">
+                <ul>
+                    <li>
+                        品优购欢迎你!
+                    </li>
+                    <li>
+                        <a href="#">请登录</a>
+                    </li>
+                    <li>
+                        <a href="#" class="style-red">免费注册</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="fr">
+                <ul>
+                    <li><a href="#">我的订单</a></li>
+                    <li class="spacer"></li>
+                    <li><a href="#">我的品优购
+                            <i class="icoon"></i>
+                        </a>
+                    </li>
+                    <li class="spacer"></li>
+                    <li><a href="#">品优购会员</a></li>
+                    <li class="spacer"></li>
+                    <li><a href="#">企业采购</a></li>
+                    <li class="spacer"></li>
+                    <li><a href="#">关注品优购
+                            <i class="icoon"></i>
+                        </a></li>
+                    <li class="spacer"></li>
+                    <li><a href="#">客户服务
+                            <i class="icoon"></i>
+                        </a></li>
+                    <li class="spacer"></li>
+                    <li><a href="#">网站导航
+                            <i class="icoon"></i>
+                        </a></li>
+                    <li class="spacer"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- header栏部分通常设置多个盒子 定位摆放 -->
+    <!-- header -->
+    <div class="header w">
+        <!-- logo -->
+        <div class="logo">
+            <h1>
+                <!-- 设置一个链接可以返回首页 -->
+                <a href="index.html" title="品优购">品优购</a>
+            </h1>
+        </div>
+        <!-- 搜索栏目 -->
+        <div class="search">
+            <input type="text" class="text" value="请输入搜索内容">
+            <button class="btn">搜索</button>
+        </div>
+        <!-- 热词栏 -->
+        <div class="hotwords">
+            <a href="#" class="style-red">优惠购首发</a>
+            <a href="#">亿元优惠</a>
+            <a href="#">9.9元团购</a>
+            <a href="#">美满99减30</a>
+            <a href="#">办公用品</a>
+            <a href="#">电脑</a>
+            <a href="#">通信</a>
+        </div>
+        <!-- 购物车部分 -->
+        <div class="shopcar">
+            <i class="car"></i> 我的购物车<i class="arrow"></i>
+            <i class="count">8</i>
+        </div>
+    </div>
+
+    <!-- 导航栏部分 -->
+    <div class="nav">
+        <div class="w">
+            <!-- 左侧盒子 下拉盒子-->
+            <!-- dt和dd两个盒子 -->
+            <div class="dropdown fl">
+                <div class="dt">全部商品分类</div>
+                <div class="dd" style="display: none;">
+                    <ul>
+                        <li class="menu_item">
+                            <a href="#">家用电器</a>
+                            <i class="arrow"></i>
+                        </li>
+
+                        <li class="menu_item">
+                            <a href="#">手机</a>
+                            <a href="#">数码</a>
+                            <a href="#">通信</a>
+                            <i class="arrow"></i>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#">电脑</a>
+                            <a href="#">办公</a>
+                            <i class="arrow"></i>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#">家居</a>
+                            <a href="#">家具</a>
+                            <a href="#">家装</a>
+                            <a href="#">厨具</a>
+                            <i class="arrow"></i>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#">男装</a>
+                            <a href="#">女装</a>
+                            <a href="#">童装</a>
+                            <a href="#">内衣</a>
+                            <i class="arrow"></i>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#">个户化妆</a>
+                            <a href="#">清洁用品</a>
+                            <a href="#">宠物</a>
+                            <i class="arrow"></i>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#">鞋靴</a>
+                            <a href="#">箱包</a>
+                            <a href="#">珠宝</a>
+                            <a href="#">奢侈品</a>
+                            <i class="arrow"></i>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#">运动户外</a>
+                            <a href="#">钟表</a>
+                            <i class="arrow"></i>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#">汽车</a>
+                            <a href="#">汽车用品</a>
+                            <i class="arrow"></i>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#">母婴</a>
+                            <a href="#">玩具乐器</a>
+                            <i class="arrow"></i>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#">食品</a>
+                            <a href="#">酒类</a>
+                            <a href="#">生鲜</a>
+                            <a href="#">特产</a>
+                            <i class="arrow"></i>
+                        </li>
+
+                        <li class="menu_item">
+                            <a href="#">医疗保健</a>
+                            <i class="arrow"></i>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#">图书</a>
+                            <a href="#">音像</a>
+                            <a href="#">电子书</a>
+                            <i class="arrow"></i>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#">彩票</a>
+                            <a href="#">旅行</a>
+                            <a href="#">充值</a>
+                            <a href="#">票务</a>
+                            <i class="arrow"></i>
+                        </li>
+                        <li class="menu_item">
+                            <a href="#">理财</a>
+                            <a href="#">众筹</a>
+                            <a href="#">白条</a>
+                            <a href="#">保险</a>
+                            <i class="arrow"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 右侧盒子 -->
+            <div class="navitem fl">
+                <ul>
+                    <li>
+                        <a href="#">服装城</a>
+                    </li>
+                    <li>
+                        <a href="#">服装城</a>
+                    </li>
+                    <li>
+                        <a href="#">服装城</a>
+                    </li>
+                    <li>
+                        <a href="#">服装城</a>
+                    </li>
+                    <li>
+                        <a href="#">服装城</a>
+                    </li>
+                    <li>
+                        <a href="#">服装城</a>
+                    </li>
+                    <li>
+                        <a href="#">服装城</a>
+                    </li>
+                    <li>
+                        <a href="#">服装城</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- 内容部分 -->
+    <div class="container w">
+        <!-- 
+            面包屑导航 
+            例如
+            手机  >  苹果手机  >  iphone 8   一层一层找下去
+        -->
+        <div class="crumb_wrap">
+            <a href="#">
+                手机、数码、通讯
+            </a> >
+            <a href="#">
+                手机
+            </a> >
+            <a href="#">
+                Apple苹果
+            </a> >
+            <a href="#">
+                iphone 6S Plus系列
+            </a>
+        </div>
+
+        <!-- 模块介绍部分  不设置高度  内容可能不同 -->
+        <!-- 没设置高度 设置了浮动之后 下面的盒子就会浮动上来  切记清除浮动 -->
+        <div class="product_intro clearfix">
+            <!-- 左侧盒子   预览区域-->
+            <div class="preview_wrap fl">
+                <div class="preview_img">
+                    <img src="upload/s3.png" alt="">
+                    <!-- 遮挡层 -->
+                    <div class="mask"></div>
+                    <div class="big">
+                        <img src="upload/big.jpg" alt="" class="bigImg">
+                    </div>
+                </div>
+                <!-- 预览盒子 -->
+                <div class="preview_list">
+                    <!-- 左右按钮  用定位设置 -->
+                    <a href="" class="arrow_prew"></a>
+                    <a href="" class="arrow_next"></a>
+
+                    <!-- 手机样式展示部分 -->
+                    <ul class="list_item">
+                        <li class="current">
+                            <img src="upload/detail_03.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="upload/detail_03.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="upload/detail_03.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="upload/detail_03.jpg" alt="">
+                        </li>
+                        <li>
+                            <img src="upload/detail_03.jpg" alt="">
+                        </li>
+                    </ul>
+                    <h4>商品编号：0468256644</h4>
+                </div>
+            </div>
+            <!-- 右侧盒子 详细介绍盒子-->
+            <div class="iteminfo_wrap fr">
+                <!-- 详细介绍名字 -->
+                <div class="sk_name">
+                    Apple iPhone 6s（A1700）64G玫瑰金色 移动通信电信4G手机
+                </div>
+
+                <!-- 介绍的标题 -->
+                <div class="news">
+                    推荐选择下方[移动优惠购],手机套餐齐搞定,不用换号,每月还有花费返s
+                </div>
+
+                <!-- 产品详细摘要 内部格式基本相同 -->
+                <div class="summary">
+                    <!-- 价格 -->
+                    <dl class="summary_price">
+                        <dt>价 格</dt>
+                        <dd>
+                            <a href="#">
+                                <i class="price">&yen;5299.00</i>
+                            </a>
+                            <a href="#"> 降价通知</a>
+
+                            <!-- 评价 -->
+                            <div class="remark">
+                                累计评价:666666
+                            </div>
+                        </dd>
+                    </dl>
+                    <!-- 促销 -->
+                    <dl class="summary_promotion">
+                        <dt>促 销</dt>
+                        <dd>
+                            <!-- 尽量不使用br换行  给dd加宽度 -->
+                            <em>加价购</em>
+                            满999.00另加20.00元，或满1999.00另加30.00元，或满2999.00另加40.00元，即可在购物车换
+                            购热销商品 详情 》
+                        </dd>
+                    </dl>
+                    <!-- 支持 -->
+                    <dl class="summary_support">
+                        <dt>支持 </dt>
+                        <dd>以旧换新，闲置手机回收 4G套餐超值抢 礼品购</dd>
+                    </dl>
+                    <!-- 配送至 -->
+                    <dl class="summary_send">
+                        <dt>配送至</dt>
+                        <dd>四川省成都市德阳市旌阳区</dd>
+                    </dl>
+
+                    <!-- 选择部分 -->
+                    <!-- 选择颜色 -->
+                    <dl class="choice_color">
+                        <dt>选择颜色</dt>
+                        <dd>
+                            <!-- 不跳转  设置为javascript:; -->
+                            <a href="javascript:;">金色</a>
+                            <a href="javascript:;">黑色</a>
+                            <a href="javascript:;">白色</a>
+                            <a href="javascript:;" class="current">银色</a>
+                        </dd>
+                    </dl>
+
+                    <!-- 选择版本 -->
+                    <dl class="choice_version">
+                        <dt>选择版本</dt>
+                        <dd>
+                            <a href="javascript:;">公开版</a>
+                            <a href="javascript:;" class="current">移动4G</a>
+                        </dd>
+                    </dl>
+                    <!-- 选择容量 -->
+                    <dl class="choice_max">
+                        <dt>选择容量</dt>
+                        <dd>
+                            <a href="javascript:;">16GB</a>
+                            <a href="javascript:;" class="current">64GB</a>
+                            <a href="javascript:;">128GB</a>
+                        </dd>
+                    </dl>
+                    <!-- 购买方式 -->
+                    <dl class="choice_type">
+                        <dt>购买方式</dt>
+                        <dd>
+                            <a href="javascript:;">官方标配</a>
+                            <a href="javascript:;">移动优惠购</a>
+                            <a href="javascript:;" class="current">电信优惠购</a>
+                        </dd>
+                    </dl>
+                    <!-- 套装 -->
+                    <dl class="choice_suit">
+                        <dt>套装</dt>
+                        <dd>
+                            <a href="javascript:;">保护套装</a>
+                            <a href="javascript:;">充电套装</a>
+                        </dd>
+                    </dl>
+                    <!-- 加入购物车  选择按钮组-->
+                    <div class="choice_btns">
+                        <!-- 数量盒子 -->
+                        <div class="choice_amount">
+                            <input type="text" value="1">
+                            <!-- 定位设置加减号 -->
+                            <a href="javascript:;" class="add">+</a>
+                            <a href="javascript:;" class="reduce">-</a>
+                        </div>
+                        <!-- 加入购物车链接 -->
+                        <a href="#" class="addcar">加入购物车</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 产品详细说明 -->
+        <!-- 没有设置高度 会导致盒子浮动 必须清除浮动 -->
+        <div class="produce_detail clearfix">
+            <div class="aside fl">
+                <div class="table_list">
+                    <ul>
+                        <li class="first_tab current">相关分类</li>
+                        <li class="second_tab">推荐品牌</li>
+                    </ul>
+                </div>
+                <div class="table_content">
+                    <ul class="daohang">
+                        <li>手机</li>
+                        <li>手机壳</li>
+                        <li>内存卡</li>
+                        <li>iphone配件</li>
+                        <li>贴膜</li>
+                        <li>手机耳机</li>
+                        <li>移动电源</li>
+                        <li>平板电脑</li>
+                        <li>笔记本</li>
+                        <li>蓝牙耳机</li>
+                    </ul>
+                    <!-- 相关分类 -->
+                    <ul class="classify">
+                        <li>
+                            <img src="upload/cdb_03.jpg" alt="">
+                            <!-- 文字多了 不允许换行 显示。。。
+                            white-space:nowrap
+                            overflow:hidden
+                            text-overflow:ellipsis -->
+                            <h5>羽博&nbsp;10000mah&nbsp;双USB&nbsp;Y7移动&nbsp;羽博&nbsp;10000mah&nbsp;双USB&nbsp;Y7移动</h5>
+                            <div class="aside_price">
+                                &yen; 19
+                            </div>
+                            <a href="#" class="add_car">加入购物车</a>
+                        </li>
+                        <li>
+                            <img src="upload/cdb_03.jpg" alt="">
+
+                            <!-- 文字多了 不允许换行 显示。。。
+                            white-space:nowrap
+                            overflow:hidden
+                            text-overflow:ellipsis -->
+                            <h5>羽博&nbsp;10000mah&nbsp;双USB&nbsp;Y7移动&nbsp;羽博&nbsp;10000mah&nbsp;双USB&nbsp;Y7移动</h5>
+                            <div class="aside_price">
+                                &yen; 19
+                            </div>
+                            <a href="#" class="add_car">加入购物车</a>
+                        </li>
+                        <li>
+                            <img src="upload/cdb_03.jpg" alt="">
+
+                            <!-- 文字多了 不允许换行 显示。。。
+                            white-space:nowrap
+                            overflow:hidden
+                            text-overflow:ellipsis -->
+                            <h5>羽博&nbsp;10000mah&nbsp;双USB&nbsp;Y7移动&nbsp;羽博&nbsp;10000mah&nbsp;双USB&nbsp;Y7移动</h5>
+                            <div class="aside_price">
+                                &yen; 19
+                            </div>
+                            <a href="#" class="add_car">加入购物车</a>
+                        </li>
+                        <li>
+                            <img src="upload/cdb_03.jpg" alt="">
+
+                            <!-- 文字多了 不允许换行 显示。。。
+                            white-space:nowrap
+                            overflow:hidden
+                            text-overflow:ellipsis -->
+                            <h5>羽博&nbsp;10000mah&nbsp;双USB&nbsp;Y7移动&nbsp;羽博&nbsp;10000mah&nbsp;双USB&nbsp;Y7移动</h5>
+                            <div class="aside_price">
+                                &yen; 19
+                            </div>
+                            <a href="#" class="add_car">加入购物车</a>
+                        </li>
+                        <li>
+                            <img src="upload/cdb_03.jpg" alt="">
+
+                            <!-- 文字多了 不允许换行 显示。。。
+                            white-space:nowrap
+                            overflow:hidden
+                            text-overflow:ellipsis -->
+                            <h5>羽博&nbsp;10000mah&nbsp;双USB&nbsp;Y7移动&nbsp;羽博&nbsp;10000mah&nbsp;双USB&nbsp;Y7移动</h5>
+                            <div class="aside_price">
+                                &yen; 19
+                            </div>
+                            <a href="#" class="add_car">加入购物车</a>
+                        </li>
+                        <li id="nobot">
+                            <img src="upload/cdb_03.jpg" alt="">
+
+                            <!-- 文字多了 不允许换行 显示。。。
+                            white-space:nowrap
+                            overflow:hidden
+                            text-overflow:ellipsis -->
+                            <h5>羽博&nbsp;10000mah&nbsp;双USB&nbsp;Y7移动&nbsp;羽博&nbsp;10000mah&nbsp;双USB&nbsp;Y7移动</h5>
+                            <div class="aside_price">
+                                &yen; 19
+                            </div>
+                            <a href="#" class="add_car">加入购物车</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="detail fr">
+                <!-- 选择搭配 -->
+                <div class="detail_tab_list">
+                    <ul>
+                        <li>商品介绍</li>
+                    </ul>
+                    <ul>
+                        <li>规格与包装</li>
+                    </ul>
+                    <ul>
+                        <li>售后保障</li>
+                    </ul>
+                    <ul>
+                        <li>商品评价</li>
+                    </ul>
+                    <ul>
+                        <li>手机社区</li>
+                    </ul>
+                </div>
+                <div class="detail_tab_con">
+                    <!-- 商品介绍 -->
+                    <div class="item">
+                        <ul class="item_info">
+                            <li> 分辨率：1920*1080(FHD)</li>
+                            <li> 后置摄像头：1200万像素</li>
+                            <li> 前置摄像头：500万像素</li>
+                            <li> 核 数：其他</li>
+                            <li> 频 率：以官网信息为准</li>
+                            <li> 品牌： Apple ♥关注</li>
+                            <li>商品名称：APPLEiPhone 6s Plus</li>
+                            <li> 商品编号：1861098</li>
+                            <li> 商品毛重：0.51kg</li>
+                            <li> 商品产地：中国大陆</li>
+                            <li> 热点：指纹识别，Apple Pay，金属机身，拍照神器</li>
+                            <li>系统：苹果（IOS）</li>
+                            <li> 像素：1000-1600万</li>
+                            <li> 机身内存：64GB</li>
+                        </ul>
+                        <p>
+                            <a href="#" class="more">
+                                查看更多参数&nbsp;
+                            </a>
+                        </p>
+                        <img src="upload/sj_d_03.jpg" alt="">
+                        <img src="upload/sj_d2_03.jpg" alt="">
+                        <img src="upload/sj_d3_03.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 底部 -->
+        <div class="footer ">
+            <div class="w">
+                <!-- 服务模块 -->
+                <!-- 
+                使用了精灵图片技术
+                利用background-position:负值
+                    找到不同位置上的图片
+            -->
+                <div class="mod_service">
+                    <ul>
+                        <li>
+                            <i class="mod_service_icon mod_service_zheng"></i>
+                            <div class="mod_service_title">
+                                <h5>正品保障</h5>
+                                <p>正品保障,提供发票</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="mod_service_icon mod_service_ji"></i>
+                            <div class="mod_service_title">
+                                <h5>极速物流</h5>
+                                <p>急速物流,急速送达</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="mod_service_icon mod_service_wu"></i>
+                            <div class="mod_service_title">
+                                <h5>无忧售后</h5>
+                                <p>7天无理由退换货</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="mod_service_icon mod_service_te"></i>
+                            <div class="mod_service_title">
+                                <h5>特色服务</h5>
+                                <p>私人订制家电套餐</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="mod_service_icon mod_service_help"></i>
+                            <div class="mod_service_title">
+                                <h5>帮助中心</h5>
+                                <p>您的购物指南</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- 帮助模块 -->
+                <div class="mod_help">
+                    <dl class="mod_help_item">
+                        <dt>购物指南</dt>
+                        <dd>
+                            <a href="#">货物流程</a>
+                        </dd>
+                        <dd>
+                            <a href="#">会员介绍</a>
+                        </dd>
+                        <dd>
+                            <a href="#">生活旅行/团购</a>
+                        </dd>
+                        <dd>
+                            <a href="#">常见问题</a>
+                        </dd>
+                        <dd>
+                            <a href="#">大家电</a>
+                        </dd>
+                        <dd>
+                            <a href="#">联系客服</a>
+                        </dd>
+                    </dl>
+                    <dl class="mod_help_item">
+                        <dt>配送方式</dt>
+                        <dd>
+                            <a href="#">上门自提</a>
+                        </dd>
+                        <dd>
+                            <a href="#">211限时达</a>
+                        </dd>
+                        <dd>
+                            <a href="#">配送服务查询</a>
+                        </dd>
+                        <dd>
+                            <a href="#">配送费收取标准</a>
+                        </dd>
+                        <dd>
+                            <a href="#">海外配送</a>
+                        </dd>
+                    </dl>
+                    <dl class="mod_help_item">
+                        <dt>配送方式</dt>
+                        <dd>
+                            <a href="#">上门自提</a>
+                        </dd>
+                        <dd>
+                            <a href="#">211限时达</a>
+                        </dd>
+                        <dd>
+                            <a href="#">配送服务查询</a>
+                        </dd>
+                        <dd>
+                            <a href="#">配送费收取标准</a>
+                        </dd>
+                        <dd>
+                            <a href="#">海外配送</a>
+                        </dd>
+                    </dl>
+                    <dl class="mod_help_item">
+                        <dt>配送方式</dt>
+                        <dd>
+                            <a href="#">上门自提</a>
+                        </dd>
+                        <dd>
+                            <a href="#">211限时达</a>
+                        </dd>
+                        <dd>
+                            <a href="#">配送服务查询</a>
+                        </dd>
+                        <dd>
+                            <a href="#">配送费收取标准</a>
+                        </dd>
+                        <dd>
+                            <a href="#">海外配送</a>
+                        </dd>
+                    </dl>
+                    <dl class="mod_help_item">
+                        <dt>配送方式</dt>
+                        <dd>
+                            <a href="#">上门自提</a>
+                        </dd>
+                        <dd>
+                            <a href="#">211限时达</a>
+                        </dd>
+                        <dd>
+                            <a href="#">配送服务查询</a>
+                        </dd>
+                        <dd>
+                            <a href="#">配送费收取标准</a>
+                        </dd>
+                        <dd>
+                            <a href="#">海外配送</a>
+                        </dd>
+                    </dl>
+                    <dl class="mod_help_item mod_help_app">
+                        <dt>帮助中心</dt>
+                        <dd>
+                            <img src="img/wx_cz.jpg" alt="">
+                            <p>品优购客户端</p>
+                        </dd>
+                    </dl>
+
+                </div>
+                <!-- 版权模块 -->
+                <div class="mod_copyright">
+                    <p class="mod_copyright_links">
+                        <a href="#">关于我们</a> |
+                        <a href="#">联系我们</a> |
+                        <a href="#">联系客服</a> |
+                        <a href="#">商家入驻</a> |
+                        <a href="#">营销中心</a> |
+                        <a href="#">手机品优购</a> |
+                        <a href="#">友情链接</a> |
+                        <a href="#">销售联盟</a> |
+                        <a href="#">品优购社区</a> |
+                        <a href="#">品优购公益</a> |
+                        <a href="#">English Site</a> |
+                        <a href="#">Contact U</a>
+                    </p>
+                    <p class="mod_copyright_info">
+                        地址:北京市昌平区建材城西路金燕坨办公楼层邮编: 10096电话: 400-618-40000传真: 010-82935100邮箱: zhanghjtitcast.cn
+                        <br />
+                        亰ICP畜08001421号京公阿安奇110108007702
+                    </p>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

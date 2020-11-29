@@ -1,0 +1,387 @@
+.crumb_wrap{
+    height: 30px;
+    margin-top: 20px;
+}
+
+.crumb_wrap a{
+    margin-right: 10px;
+}
+
+.preview_wrap{
+    width: 400px;
+    height: 590px;
+    /* background-color: pink; */
+}
+
+.preview_img{
+    position: relative;
+    height: 398px;
+    border:1px solid #ccc;   
+}
+
+.mask{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    background: rgba(243, 219, 3,.3);
+    cursor: move;
+}
+
+.big{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 410px;
+    z-index: 999;
+    width: 500px;
+    height: 500px;
+    border: 1px solid #e12224;
+    overflow: hidden;
+}
+
+.big img{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.preview_list{
+    position: relative;
+    height: 60px;
+    /* background-color: purple; */
+    margin-top: 60px;
+}
+
+.preview_list .list_item{
+    width: 320px;
+    height: 60px;
+    /* background-color: yellow; */
+    margin: 0 auto;
+}
+
+.preview_list li{
+    float: left;
+    width: 56px;
+    height: 56px;
+    margin:0 2px;
+    border:2px solid transparent;
+}
+
+.preview_list li.current{
+    border:2px solid#c81623;
+}
+
+.iteminfo_wrap{
+    /* 不设置高度 因为内容不确定 */
+    width: 718px;
+    /* background-color: purple; */
+}
+.arrow_prew{
+    left: 0;
+    background: url(../upload/lefta_06.jpg) no-repeat;
+}
+
+.arrow_next{
+    right: 0;
+    background: url(../upload/righta_06.jpg) no-repeat;
+}
+.product_intro h4{
+    margin-top: 15px;
+}
+.arrow_prew,
+.arrow_next{
+    position: absolute;
+    top:15px;
+    width: 22px;
+    height: 32px;
+    /* background-color: purple; */
+}
+
+.sk_name{
+    height: 30px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.news{
+    height:32px;
+    color:#e12224;
+}
+
+.summary dl{
+    overflow: hidden;
+}
+.summary dt,
+.summary dd{
+    float: left;
+}
+
+.summary dt{
+    width: 60px;
+    line-height: 36px;
+    padding-left: 10px;
+}
+.summary_price,
+.summary_promotion{
+    position: relative;
+    padding:10px 0;
+    background-color: #fee9eb;
+}
+.price{
+    font-size: 24px;
+    color:#e12228;
+}
+.summary_price a{
+    color:#c81623;
+}
+
+.summary .remark{
+    position: absolute;
+    top:10px;
+    right:20px;
+}
+
+.summary_promotion{
+    padding: 0;
+}
+
+.summary_promotion dd{
+    width: 450px;
+    line-height: 36px;
+}
+
+.summary_promotion em{
+    display: inline-block;
+    height: 22px;
+    width: 40px;
+    background-color: #c81623;
+    text-align: center;
+    line-height: 22px;
+    color:#fff; 
+}
+
+.summary_support dd,
+.summary_send dd{
+    line-height: 36px;
+}
+
+.choice_color a{
+    display: inline-block;
+    width: 80px;
+    height: 41px;
+    background-color: #f7f7f7;
+    border:1px solid #ededed;
+    text-align: center;
+    line-height: 41px;
+}
+.choice_color a.current,
+.choice_version dd a.current,
+.choice_type dd a.current
+{
+    border-color:#c81623;
+}
+
+.choice_version,
+.choice_type,
+.choice_max,
+.choice_suit{
+    margin:10px 0;
+}
+.choice_version a,
+.choice_type a,
+.choice_max a,
+.choice_suit a{
+    display: inline-block;
+    height: 32px;
+    line-height: 32px;
+    padding:0 12px;
+    text-align: center;
+    border:1px solid #ededed;
+    background-color: #f7f7f7;
+}
+
+.choice_btns{
+    margin-top:20px;
+}
+.choice_amount{
+    float: left;
+    position: relative;
+    width: 50px;
+    height: 46px;
+    /* background-color: pink; */
+    margin-right: 10px;
+}
+.choice_amount input{
+    width: 33px;
+    height: 44px;
+    border:1px solid #cccccc;
+    line-height: 44px;
+    text-align: center;
+}
+
+.add,
+.reduce{
+    position: absolute;
+    width: 15px;
+    height: 22px;
+    border:1px solid #cccccc;
+    background-color: #f1f1f1;
+    text-align: center;
+    line-height: 22px;
+}
+.add{
+    top:0;
+    right: 0;
+}
+.reduce{
+    bottom: 0;
+    right: 0;
+    cursor: not-allowed;
+}
+
+.addcar{
+   float: left;
+    width: 142px;
+    height: 46px;
+    background-color: #c81623;
+    text-align: center;
+    line-height: 46px;
+    font-size: 18px;
+    color:#fff;
+    font-weight: 700;
+}
+
+.aside{
+    width: 208px;
+    border:1px solid #ccc;
+    /* background-color: pink; */
+
+ /* 需要删除 */
+
+    
+}
+.detail{
+    width: 978px;
+    /* border:1px solid #ccc; */
+    /* background-color: purple; */
+
+
+    /* 需要删除 */
+}
+
+.table_list{
+    overflow: hidden;
+    height: 34px;
+}
+.table_list li{
+    float: left;
+    height: 33px;
+    border-bottom:1px solid #ccc;
+    background-color: #f1f1f1;
+    line-height: 32px;
+    text-align: center;
+}
+.first_tab{
+    width: 104px;
+}
+
+/* 
+    鼠标点击 li 的时候发生变化 
+    背景变白色
+    去掉下边框
+    文字变白色
+*/
+
+.table_list .current{
+    background-color: #fff;
+    border-bottom: 0;
+    color:red;
+}
+
+.second_tab{
+    width: 103px;
+    border-left:1px solid #ccc;
+}
+
+
+.table_content {
+    padding:0 10px;
+}
+
+.table_content .daohang li{
+    float: left;
+    width: 80px;
+    height: 20px;
+    font-size: 12px;
+    line-height: 20px;
+    border-bottom: 1px dashed #ccc;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.table_content .classify li {
+    border-bottom: 1px dashed #ccc;
+}
+.produce_detail .classify #nobot{
+    border-bottom: 0;
+}
+
+.classify h5{
+    /* 文字多了 不允许换行 显示。。。 */
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    font-weight: 400;
+}
+
+.aside_price{
+    font-weight: 700;
+    margin:10px 0;
+}
+
+.aside .add_car{
+    display: block;
+    margin:10px auto;
+    width: 88px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    border: 1px dashed #ccc;
+    background-color: #f7f7f7;
+}
+
+.detail_tab_list{
+    height: 39px;
+    border:1px solid #ccc;
+    background-color: #f7f7f7;
+}
+.detail_tab_list li{
+    float: left;
+    font-weight: 700;
+    font-size: 16px;
+    height: 39px;
+    text-align: center;
+    line-height: 39px;
+    padding:0 20px;
+    cursor: pointer;
+}
+
+.detail_tab_list li:hover{
+    background-color: #c81623;
+}
+.item_info{
+
+    padding:20px 0 0 20px;
+}
+
+.item_info li{
+    line-height: 22px;
+}
+
+.item .more{
+    float:right;
+    font-weight: 700;
+    font-family: 'icomoon';
+}
