@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/base.css">
     <!-- 引入注册css -->
     <link rel="stylesheet" href="css/register.css">
+
+    <script src="js/register.js"></script>
 </head>
 
 <body>
@@ -38,27 +40,37 @@
                             <!-- 行内快 -->
                             <!-- 设置宽度 全部右对齐 -->
                             <label for="tel">手机号:</label>
-                            <input type="text" value="" class="inp" id="tel" class="inp">
-                            <span class="error">
-                                <i class="error_ico"> </i>
-                                手机格式输入错误，请重新输入</span>
+                            <input type="text" value="" class="inp" id="tel" name="telp" autocomplete="off">
+                            <span class=""></span>
                         </li>
                         <li>
                             <!-- 行内快 -->
                             <!-- 设置宽度 全部右对齐 -->
                             <label for="message">短信验证码:</label>
                             <input type="text" value="" id="message" class="inp">
-
+                            <span class=""></span>
                         </li>
                         <li>
                             <!-- 行内快 -->
                             <!-- 设置宽度 全部右对齐 -->
+                            <label for="message">QQ:</label>
+                            <input type="text" value="" id="qq" class="inp">
+                            <span class=""></span>
+                        </li>
+                        <li>
+                            <!-- 行内快 -->
+                            <!-- 设置宽度 全部右对齐 -->
+                            <label for="message">昵称:</label>
+                            <input type="text" value="" id="nc" class="inp">
+                            <span class=""></span>
+                        </li>
+
+                        <li>
+                            <!-- 行内快 -->
+                            <!-- 设置宽度 全部右对齐 -->
                             <label for="pwd">登陆密码:</label>
-                            <input type="text" value="" id="pwd" class="inp">
-                            <span class="error">
-                                <i class="error_ico"> </i>
-                                <i class="right_ico"></i>
-                                密码不少于六位数,请重新输入</span>
+                            <input type="password" value="" id="pwd" class="inp">
+                            <span class=""></span>
                         </li>
                         <li class="safe">
                             安全程度:
@@ -70,10 +82,8 @@
                             <!-- 行内快 -->
                             <!-- 设置宽度 全部右对齐 -->
                             <label for="sure">确认密码:</label>
-                            <input type="text" value="" id="sure" class="inp">
-                            <span class="error">
-                                <i class="error_ico"> </i>
-                                密码不一致,请重新输入</span>
+                            <input type="password" value="" id="surepwd" class="inp">
+                            <span class=""></span>
                         </li>
                         <li class="agree">
                             <input type="checkbox" checked="checked">
