@@ -97,13 +97,14 @@
             }
         }
 
-        // 获得计划
+        // 获得计划0.
+
         function getPlane() {
             if (localStorage.getItem('plan') === null || localStorage.getItem('plan') === '') {
                 plan.textContent = '你今天需要做。。。。';
             }
             else {
-                plan.textContent = localStorage.getItem('name');
+                plan.textContent = localStorage.getItem('plan');
             }
         }
 
