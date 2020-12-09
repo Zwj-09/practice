@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container .panel:nth-child(1){
+    background-image: url(../Images/01.jpg);
+}
+.container .panel:nth-child(2){
+    background-image: url(../Images/02.jpg);
+}
+.container .panel:nth-child(3){
+    background-image: url(../Images/03.jpg) ;
+}
+.container .panel:nth-child(4){
+    background-image: url(../Images/04.jpg);
+}
+.container .panel:nth-child(5){
+    background-image: url(../Images/05.jpg);
+}
+
+.container{
+    display: flex;
+    width: 90vw;
+    height: 90vh;
+    margin:100px 0;
+}
+
+.container .panel{
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    color: #fff;
+    flex: 1;
+    cursor: pointer;
+    height: 80vh;
+    position: relative;
+    margin: 10px;
+    transition: flex 0.7s cubic-bezier(0.05,0.6,0.4,0.9); 
+}
+
+.panel.active{
+    flex: 5;
+}
+
+.panel.active h3{
+    opacity: 1;
+}
+
+.container .panel h3{
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left:80px;
+    opacity: 0;
+    margin: 0;
+    transition: opacity 0s ease-in;
+}
+
+@media(max-width:500px){
+    /* 只显示三个图片 */
+    .container{
+        width: 100vw;
+    }
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5){
+        display: none;
+    }
+}
