@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(0,0,0,0.9);
+    margin: 0;
+    color: #FFF;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* 水平方向不出现滚动条 */
+    overflow-x: hidden;
+}
+
+h1{
+    margin: 0;
+}
+
+p{
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* 伪元素是行内元素 */
+.showcase::after{
+    display: block;
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background: url('../Images/bg.jpg') no-repeat center center/cover;
+    /* 设置滤镜 模糊 */
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    transition: all 0.5s;
+}
+/* 鼠标移入 图片变清晰 */
+.showcase:hover::after{
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+/* 鼠标移入 文本内容模糊 */
+.showcase:hover .content{
+     /* 设置滤镜 模糊 */
+     filter: blur(2px);
+     -webkit-filter: blur(2px);
+}
+.showcase{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.content .title{
+    font-size: 4rem;
+    color:#FFF;
+}
+/* ============================== */
+.container{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 4rem 1rem;
+}
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+
+.grid-3 img{
+    width: 100px;
+    height: 100px;
+}
+
+.center{
+    text-align: center;
+    margin: auto;
+}
+
+/* ========================= */
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+}
+
+.bg-light{
+    background-color:#F4F4F4 ;
+    color: #333;
+}
+
+.bg-dark{
+    background-color: #333;
+    color: #F4F4F4;
+}
+
+footer{
+    padding: 2rem;
+}
+
+/* 移动端 */
+@media(max-width:560px){
+    .showcase::after{
+        height: 50vh;
+    }
+    .content .title{
+        font-size: 2rem;
+    }
+    .content .text {
+        display: none;
+    }
+    .grid-3,.grid-2{
+        grid-template-columns: 1fr;
+    }
+
+    .grid-3 img,
+    .grid-2 img{
+        width: 80px;
+        height: 80px;
+    } 
+
+    .service div{
+        border-bottom:1px dashed rgb(43, 255, 0);
+        padding: 1.2rem 1rem;
+    }
+}
+
+/* 横屏媒体查询 */
+@media(max-height:500px){
+    .content .text{
+        display: none;
+    }
+}
